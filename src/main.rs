@@ -7,7 +7,7 @@ struct Sha256 {
 
 impl fmt::Display for Sha256 {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "{:x?}{:x?}{:x?}{:x?}{:x?}{:x?}{:x?}{:x?}",
+        write!(f, "{:08x?}{:08x?}{:08x?}{:08x?}{:08x?}{:08x?}{:08x?}{:08x?}",
 			self.state[0],self.state[1],self.state[2],self.state[3],
 			self.state[4],self.state[5],self.state[6],self.state[7]
 		)
